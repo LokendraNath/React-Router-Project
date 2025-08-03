@@ -65,17 +65,6 @@ export default function Header() {
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="user"
-                  className={({ isActive }) =>
-                    isActive ? "text-blue-600" : "text-gray-900"
-                  }
-                >
-                  User
-                </NavLink>
-              </li>
-
-              <li>
                 <Link
                   to="github"
                   target=""
@@ -85,6 +74,16 @@ export default function Header() {
                 >
                   GitHub
                 </Link>
+              </li>
+              <li>
+                <NavLink
+                  to="user"
+                  className={({ isActive }) =>
+                    isActive ? "text-blue-600" : "text-gray-900"
+                  }
+                >
+                  User
+                </NavLink>
               </li>
             </ul>
           </div>

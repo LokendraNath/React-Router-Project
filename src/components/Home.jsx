@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div className="mx-auto w-full max-w-7xl">
@@ -10,7 +12,7 @@ export default function Home() {
             </h2>
 
             <Link
-              className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
+              className="inline-flex text-white items-center px-6 py-3 font-medium bg-blue-700 rounded-lg hover:opacity-80"
               to="/"
             >
               <svg

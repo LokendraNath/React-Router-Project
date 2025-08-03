@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="shadow sticky z-50 top-0">
@@ -5,10 +7,13 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-              className="mr-3 h-12"
+              src="https://i.pinimg.com/736x/2e/ab/bb/2eabbb7c424cbae5495d4fbfdbcb887e.jpg"
+              className="h-16"
               alt="Logo"
-            />
+            />{" "}
+            <span className="text-2xl font-bold text-gray-800">
+              React Router Project
+            </span>
           </Link>
           <div className="flex items-center lg:order-2">
             <Link
@@ -19,7 +24,7 @@ export default function Header() {
             </Link>
             <Link
               to="#"
-              className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
             >
               Get started
             </Link>
